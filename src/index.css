@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&family=Playwrite+CU+Guides&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -157,37 +159,44 @@ body {
   font-size: clamp(2.4rem, 5vw, 4.2rem);
   line-height: 1.1;
   font-weight: 800;
-  color: #18251f;
+  color: #fff;
   letter-spacing: -2px;
+ font-family: "Edu QLD Hand", cursive;
 }
 
 .hero-title span {
-  color: #198754;
+  color: #05fa88;
 }
 
 .hero-text {
   max-width: 620px;
   font-size: 1.15rem;
   line-height: 1.8;
-  color: #000000;
+  color: #e4d9d9;
+  border: 1px solid #fff;
+  padding: 15px;
+  border-radius: 10px 50px 10px 50px;
+  font-family: "Edu QLD Hand", cursive;
 }
 
 .hero-buttons .btn {
   border-radius: 9px;
   padding: 12px 21px;
   font-weight: 600;
+  color: #fff;
 }
 
 .hero-info {
   display: flex;
   flex-wrap: wrap;
   gap: 18px;
-  color: #000000;
+  color: #fcf9f9;
   font-size: 0.9rem;
+  font-family: "Edu QLD Hand", cursive;
 }
 
 .hero-info i {
-  color: #198754;
+  color: #21ce7d;
 }
 
 .hero-card {
@@ -204,21 +213,25 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #198754;
+  background-color: #1ebe74;
   color: white;
   border-radius: 16px;
   font-size: 1.6rem;
   margin-bottom: 22px;
+  
 }
 
 .hero-card h3 {
   font-weight: 700;
   margin-bottom: 10px;
+  color: #fff;
+  font-family: "Edu QLD Hand", cursive;
 }
 
 .hero-card > p {
-  color: #6c757d;
+  color: #000000;
   line-height: 1.6;
+  font-family: "Edu QLD Hand", cursive;
 }
 
 .hero-card-item {
@@ -227,12 +240,13 @@ body {
   gap: 13px;
   padding: 13px 0;
   border-top: 1px solid #edf0ee;
-  color: #39423e;
+  color: #000000;
   font-weight: 500;
+  font-family: "Edu QLD Hand", cursive;
 }
 
 .hero-card-item i {
-  color: #198754;
+  color: #18e284;
   width: 20px;
 }
 
@@ -252,6 +266,7 @@ body {
 .section-heading {
   max-width: 700px;
   margin: 0 auto;
+  font-family: "Edu QLD Hand", cursive;
 }
 
 .section-label {
@@ -259,6 +274,7 @@ body {
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 1.5px;
+  
 }
 
 .section-heading h2 {
@@ -266,11 +282,13 @@ body {
   font-size: 2.2rem;
   font-weight: 750;
   color: #18251f;
+  font-family: "Edu QLD Hand", cursive;
 }
 
 .section-heading p {
   color: #6c757d;
   margin-top: 12px;
+  
 }
 
 /* =========================
@@ -320,6 +338,7 @@ body {
 .exam-card p {
   color: #6c757d;
   line-height: 1.7;
+  font-family: "Edu QLD Hand", cursive;
 }
 
 .exam-link {
@@ -367,6 +386,7 @@ body {
 .feature-card p {
   color: #6c757d;
   line-height: 1.7;
+  font-family: "Edu QLD Hand", cursive;
 }
 
 /* =========================
@@ -378,8 +398,10 @@ body {
 }
 
 .cta-box {
-  background-color: #198754;
-  color: #ffffff;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #030000;
   border-radius: 22px;
   padding: 60px 25px;
 }

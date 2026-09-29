@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
-import heroImage from '../assets/images/lalatsara.jpg'
+import heroImage from '../assets/images/tableau.jpg'
+import ctaImage from '../assets/images/fond.jpg'
 
 function Home() {
   return (
@@ -272,7 +273,7 @@ function Home() {
       <section className="cta-section">
         <div className="container">
 
-          <div className="cta-box text-center">
+          <div className="cta-box text-center"style={{ backgroundImage: `url(${ctaImage})` }}>
 
             <i className="fas fa-rocket cta-icon"></i>
 
