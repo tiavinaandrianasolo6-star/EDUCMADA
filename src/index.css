@@ -14,6 +14,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #ffffff;
   color: #212529;
+  animation: pageLoad 1.5s ease-out;
+}
+@keyframes pageLoad {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 a {
@@ -162,10 +174,40 @@ body {
   color: #fff;
   letter-spacing: -2px;
  font-family: "Edu QLD Hand", cursive;
+ animation: heroTitleIn 5s ease-out forwards infinite;
 }
 
 .hero-title span {
   color: #05fa88;
+  display: inline-block;
+
+  animation: eduMadaIn 1.2s ease-out 0.25s both;
+}
+
+/* Animation principale du titre */
+@keyframes heroTitleIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation légère sur "EduMada" */
+@keyframes eduMadaIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px) scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 .hero-text {
@@ -205,6 +247,33 @@ body {
   border-radius: 20px;
   padding: 35px;
   box-shadow: 0 18px 50px rgba(25, 135, 84, 0.10);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  animation: cardRotate 4s ease-in-out infinite;
+}
+@keyframes cardRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(6deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(-6deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.hero-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
 }
 
 .hero-card-icon {
@@ -243,6 +312,11 @@ body {
   color: #000000;
   font-weight: 500;
   font-family: "Edu QLD Hand", cursive;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.hero-card-item:hover{
+transform: translateY(-7px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
 }
 
 .hero-card-item i {
@@ -401,7 +475,7 @@ body {
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
-  color: #030000;
+  color: #0a0808;
   border-radius: 22px;
   padding: 60px 25px;
 }
@@ -504,5 +578,499 @@ footer a:hover {
 
   .cta-box h2 {
     font-size: 1.8rem;
+  }
+}
+
+
+
+
+/* =========================
+   PAGE CEPE
+========================= */
+
+.cepe-hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 70px 0 80px;
+  overflow: hidden;
+}
+
+.cepe-badge {
+  display: inline-block;
+  background-color: #e4f5eb;
+  color: #198754;
+  padding: 9px 15px;
+  border-radius: 50px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.cepe-hero h1 {
+  max-width: 750px;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  line-height: 1.12;
+  font-weight: 800;
+  letter-spacing: -1.8px;
+  color: #f3f3f3;
+  font-family: "Edu QLD Hand", cursive;
+  animation: heroTitleIn 5s ease-out forwards infinite;
+}
+
+.cepe-hero h1 span {
+  color: #05fa88;
+  display: inline-block;
+
+  animation: eduMadaIn 1.2s ease-out 0.25s both;
+}
+
+/* Animation principale du titre */
+@keyframes heroTitleIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation légère sur "EduMada" */
+@keyframes eduMadaIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px) scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.cepe-hero > .container > .row > .col-lg-8 > p {
+  max-width: 620px;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #e7e1e1;
+  border: 1px solid #fff;
+  padding: 15px;
+  border-radius: 10px 50px 10px 50px;
+  font-family: "Edu QLD Hand", cursive;
+}
+
+.cepe-hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.cepe-hero-buttons .btn {
+  padding: 12px 20px;
+  border-radius: 9px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.cepe-hero-card {
+  background-color: #ffffff42;
+  border: 1px solid #e2ebe541;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 18px 45px rgba(25, 135, 84, 0.09);
+ animation: cardRotate 4s ease-in-out infinite;
+}
+@keyframes cardRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(6deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(-6deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.cepe-hero-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1dca79;
+  color: #ffffff;
+  border-radius: 15px;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.cepe-hero-card h3 {
+  font-size: 1.45rem;
+  font-weight: 700;
+  font-family: "Edu QLD Hand", cursive;
+}
+
+.cepe-hero-card > p {
+  color: #000000;
+  line-height: 1.7;
+  margin: 12px 0 20px;
+  font-family: "Edu QLD Hand", cursive;
+}
+
+.cepe-stat {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-top: 1px solid #edf1ee;
+  color: #090a0a;
+  font-size: 0.92rem;
+  font-weight: 600;
+  font-family: "Edu QLD Hand", cursive;
+}
+
+.cepe-stat i {
+  width: 20px;
+  color: #17dd81;
+}
+
+.cepe-section {
+  padding: 90px 0;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.cepe-subjects-section {
+  background-color: #f8faf9;
+}
+
+
+.btn {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+
+
+/* =========================
+   MATIERES
+========================= */
+
+.cepe-matiere-card {
+  background-color: #ffffff49;
+  border: 1px solid #0b7c31a2;
+  border-radius: 16px;
+  padding: 28px;
+  height: 100%;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cepe-matiere-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
+}
+
+.cepe-matiere-icon {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e6f5ed;
+  color: #198754;
+  border-radius: 13px;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.cepe-matiere-card h3 {
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.cepe-matiere-card h3:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
+}
+
+.cepe-matiere-card p {
+  color: #090a0c;
+  line-height: 1.6;
+  font-size: 0.92rem;
+  font-family: "Edu QLD Hand", cursive;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cepe-card-link {
+  display: inline-block;
+  margin-top: 8px;
+  color: #198754;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.text-center .btn {
+  color: #000000;
+}
+
+.cepe-card-link:hover {
+  color: #146c43;
+}
+
+/* =========================
+   DOCUMENTS
+========================= */
+
+.cepe-document-card {
+  background-color: #0d69308e;
+  border: 1px solid #e3e9e55d;
+  border-radius: 16px;
+  padding: 24px;
+  height: 100%;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.cepe-document-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
+}
+
+.cepe-document-icon {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff0f0;
+  color: #dc3545;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  margin-bottom: 18px;
+}
+
+.cepe-document-content span {
+  color: #f0ecec;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.cepe-document-content h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+.cepe-document-content p {
+  color: #060707;
+  margin-bottom: 20px;
+}
+
+.cepe-document-card .btn {
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* =========================
+   QUIZ
+========================= */
+
+.cepe-quiz-box {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  background-color: #ffffff;
+  border: 1px solid #e1e9e4;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.cepe-quiz-icon {
+  flex-shrink: 0;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e6f5ed;
+  color: #198754;
+  border-radius: 15px;
+  font-size: 1.5rem;
+}
+
+.cepe-quiz-content {
+  flex-grow: 1;
+}
+
+.cepe-quiz-content h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.cepe-quiz-content p {
+  margin: 0;
+  color: #6c757d;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.cepe-cta-section {
+  padding: 20px 0 90px;
+}
+
+.cepe-cta-box {
+  background-color: #198754;
+  color: #ffffff;
+  border-radius: 22px;
+  padding: 60px 25px;
+}
+
+.cepe-cta-icon {
+  font-size: 2rem;
+  margin-bottom: 18px;
+}
+
+.cepe-cta-box h2 {
+  font-size: 2.1rem;
+  font-weight: 750;
+}
+
+.cepe-cta-box p {
+  max-width: 600px;
+  margin: 15px auto 25px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.cepe-cta-box .btn {
+  color: #198754;
+  font-weight: 600;
+  border-radius: 9px;
+  padding: 12px 22px;
+}
+
+/* =========================
+   CEPE RESPONSIVE
+========================= */
+
+@media (max-width: 767px) {
+  .cepe-hero {
+    padding: 55px 0;
+  }
+
+  .cepe-hero h1 {
+    letter-spacing: -1px;
+  }
+
+  .cepe-hero-buttons {
+    flex-direction: column;
+  }
+
+  .cepe-hero-buttons .btn {
+    width: 100%;
+  }
+
+  .cepe-section {
+    padding: 65px 0;
+  }
+
+  .cepe-quiz-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cepe-quiz-box .btn {
+    width: 100%;
+  }
+
+  .cepe-cta-box {
+    padding: 45px 20px;
+  }
+
+  .cepe-cta-box h2 {
+    font-size: 1.75rem;
+  }
+}
+/* =========================
+   CEPE MORE BUTTON
+========================= */
+
+.cepe-more-btn {
+  border-radius: 9px;
+  padding: 11px 20px;
+  font-weight: 600;
+}
+
+/* =========================
+   CEPE INNER PAGES
+========================= */
+
+.cepe-page-header {
+  background-color: #f1faf5;
+  padding: 65px 0;
+}
+
+.cepe-page-header h1 {
+  margin-top: 10px;
+  color: #18251f;
+  font-size: 2.7rem;
+  font-weight: 800;
+}
+
+.cepe-page-header p {
+  max-width: 650px;
+  margin: 15px auto 0;
+  color: #6c757d;
+  line-height: 1.7;
+}
+
+.cepe-filters {
+  display: flex;
+  gap: 15px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cepe-filters .form-select {
+  border-radius: 9px;
+  padding: 11px 15px;
+  border-color: #dfe7e2;
+}
+
+.cepe-filters .form-select:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.12);
+}
+
+@media (max-width: 576px) {
+  .cepe-filters {
+    flex-direction: column;
+  }
+
+  .cepe-page-header h1 {
+    font-size: 2.1rem;
   }
 }

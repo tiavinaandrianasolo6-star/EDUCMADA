@@ -1,4 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import CepeMatieres from './pages/CepeMatieres'
+import CepeSujets from './pages/CepeSujets'
 
 import MainLayout from './layouts/MainLayout'
 
@@ -17,11 +19,14 @@ function App() {
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/cepe" element={<Cepe />} />
+          <Route path="/cepe/matieres" element={<CepeMatieres />} />
+          <Route path="/cepe/sujets" element={<CepeSujets />} />
           <Route path="/bepc" element={<Bepc />} />
           <Route path="/bacc" element={<Bacc />} />
           <Route path="/sujets" element={<Subjects />} />
           <Route path="/quiz" element={<Quizzes />} />
           <Route path="/connexion" element={<Login />} />
+          
         </Route>
       </Routes>
     </BrowserRouter>
